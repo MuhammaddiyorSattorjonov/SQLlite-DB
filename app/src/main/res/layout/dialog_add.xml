@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:backgroundTint="#CAE1FE"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:id="@+id/clear_cache_list"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:src="@drawable/profile"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Note"
+        app:endIconMode="clear_text"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:helperTextTextColor="#323232"
+        app:startIconDrawable="@drawable/ic_baseline_edit_note_24"
+        >
+
+        <EditText
+            android:id="@+id/name"
+            android:inputType="textPersonName"
+            android:paddingEnd="@dimen/_40sdp"
+            android:layout_width="match_parent"
+            android:importantForAutofill="no"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="#94000000"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:id="@+id/btn_close"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="#4A7FA9"
+        android:textStyle="bold"
+        android:id="@+id/btn_save"/>
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
